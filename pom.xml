@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.nhnacademy.booklay.eureka</groupId>
-    <artifactId>booklay_eureka</artifactId>
+    <artifactId>booklay-eureka</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>booklay_eureka</name>
-    <description>booklay_eureka</description>
+    <name>booklay-eureka</name>
+    <description>booklay-eureka</description>
     <properties>
         <java.version>11</java.version>
         <spring-cloud.version>2021.0.5</spring-cloud.version>
