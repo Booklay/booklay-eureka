@@ -1,11 +1,6 @@
-server:
-  port: 3939
-
 spring:
   application:
-    name: booklay_discovery_service
+    name: booklay-discovery-service
 
-eureka:
-  client:
-    register-with-eureka: false
-    fetch-registry: false
+  config:
+    import: "optional:configserver:http://133.186.218.11:8888"

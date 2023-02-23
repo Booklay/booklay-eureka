@@ -36,6 +36,39 @@
             <scope>test</scope>
         </dependency>
 
+        <!--        log & crash 설정-->
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20171018</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5</version>
+        </dependency>
+
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.2.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.logncrash</groupId>
+            <artifactId>toast-logncrash-logback-sdk</artifactId>
+            <version>3.0.5</version>
+        </dependency>
+        <!--        log & crash 설정-->
+
+        <!--Spring Cloud-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-config</artifactId>
+        </dependency>
+        <!--Spring Cloud-->
+
     </dependencies>
     <dependencyManagement>
         <dependencies>
@@ -82,6 +115,13 @@
                 <enabled>false</enabled>
             </releases>
         </repository>
+
+        <repository>
+            <id>local-repository</id>
+            <name>local-repository</name>
+            <url>file://${project.basedir}/lib</url>
+        </repository>
+
     </repositories>
 
     <pluginRepositories>
