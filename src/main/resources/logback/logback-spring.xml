@@ -73,7 +73,7 @@
     <springProfile name="prod">
         <root level="${ROOT_LOG_LEVEL}">
             <appender-ref ref="STDOUT" />
-            <appender-ref ref="logNCrash" />
+<!--            <appender-ref ref="logNCrash" />-->
             <appender-ref ref="FILE" />
         </root>
     </springProfile>
